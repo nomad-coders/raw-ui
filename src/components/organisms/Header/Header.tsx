@@ -1,15 +1,13 @@
 import React from 'react';
 
-type HeaderTypes = {
+export type HeaderTypes = {
 	text: String;
 };
 
-const Header: React.FC<HeaderTypes> = ({ text }) => {
+export const Header: React.FC<HeaderTypes> = ({ text }) => {
 	return (
 		<>
 			<header className='Header'>{text}</header>
 		</>
 	);
 };
-
-export default Header;

@@ -1,14 +1,12 @@
 import React from 'react';
-import { Button, Input } from './atoms';
+import { Button } from './atoms';
+import { Link } from './molecules';
 
-const App = () => {
-  return (
-    <>
-      <Input type="email"></Input>
-      <Input type="password"></Input>
-      <Button text="I'm a button!"></Button>
-    </>
-  );
-}
-
-export default App;
+export const App = () => {
+	return (
+		<>
+			<Link text="I'm a button!" rightIcon='dot'></Link>
+			<Button label='Button'></Button>
+		</>
+	);
+};

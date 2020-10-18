@@ -1,16 +1,14 @@
 import React from 'react';
-import './Input.sass';
+import './Input.scss';
 
-type InputTypes = {
+export type InputTypes = {
 	type: string;
 };
 
-const Input: React.FC<InputTypes> = ({ type }) => {
+export const Input: React.FC<InputTypes> = ({ type }) => {
 	return (
 		<>
 			<input type={type} className='re-c-input' />
 		</>
 	);
 };
-
-export default Input;

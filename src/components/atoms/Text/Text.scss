@@ -1,0 +1,9 @@
+@import '../../../styles/colors';
+
+.re-c-text {
+    color: $re-color-white;
+    
+    &--black {
+        color: $re-color-black;
+    }
+}
